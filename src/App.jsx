@@ -6,7 +6,7 @@ import {
   LockKeyhole,
   Users,
   HardDriveDownload,
-  WifiCogIcon,
+  WifiCog,
 } from "lucide-react";
 export default function App() {
   return (
@@ -27,7 +27,7 @@ export default function App() {
     href="tel:+18015555555"
     className="border border-white/20 px-4 py-2 rounded-xl text-sm hover:bg-white/10 transition"
   >
-    Call: (801) 555-5555
+    Call: (801) 505-9256
   </a>
 
   <a
@@ -40,7 +40,7 @@ export default function App() {
       </nav>
       <div className="md:hidden sticky top-[73px] z-40 flex gap-2 px-4 py-3 bg-black/70 backdrop-blur-md border-b border-white/10">
   <a
-    href="tel:+18015555555"
+    href="tel:+18015059256"
     className="flex-1 text-center border border-white/20 px-4 py-2 rounded-xl text-sm hover:bg-white/10 transition"
   >
     Call
@@ -97,7 +97,7 @@ export default function App() {
     {
       title: "Wi-Fi Segmentation",
       desc: "Separate guest Wi-Fi from business systems so customers are not sitting on your internal network.",
-      icon: Wifi,
+      icon: WifiCog,
     },
     {
       title: "Windows 11 Upgrades",
@@ -199,7 +199,7 @@ export default function App() {
 
     <form
       className="mt-12 grid gap-5 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
-      action="mailto:youremail@example.com"
+      action="mailto:saxon@archescyber.com"
       method="POST"
       encType="text/plain"
     >
@@ -255,7 +255,7 @@ export default function App() {
 
     <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
       <a
-        href="mailto:youremail@example.com"
+        href="mailto:saxon@archescyber.com"
         className="bg-yellow-400 text-black px-8 py-4 rounded-xl font-semibold hover:bg-yellow-300 transition"
       >
         Email Us
