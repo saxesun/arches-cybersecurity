@@ -197,46 +197,54 @@ export default function App() {
       </p>
     </div>
 
-    <form
-      className="mt-12 grid gap-5 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
-      action="mailto:saxon@archescyber.com"
-      method="POST"
-      encType="text/plain"
-    >
-      <div className="grid md:grid-cols-2 gap-5">
-        <input className="rounded-xl bg-black/40 border border-white/10 px-4 py-3" name="Business Name" placeholder="Business name" />
-        <input className="rounded-xl bg-black/40 border border-white/10 px-4 py-3" name="Contact Name" placeholder="Person to contact" />
-        <input className="rounded-xl bg-black/40 border border-white/10 px-4 py-3" name="Phone" placeholder="Phone number" />
-        <input className="rounded-xl bg-black/40 border border-white/10 px-4 py-3" name="Email" placeholder="Email address" />
-      </div>
+<form
+  action="https://api.web3forms.com/submit"
+  method="POST"
+  className="mt-12 max-w-3xl mx-auto grid gap-5 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
+>
+  <input type="hidden" name="access_key" value="53dd5819-99b4-401d-b80a-192fd78de863" />
 
-      <input className="rounded-xl bg-black/40 border border-white/10 px-4 py-3" name="Business Address" placeholder="Business address" />
+  <div className="grid md:grid-cols-2 gap-5">
+    <input className="rounded-xl bg-black/40 border border-white/10 px-4 py-3" name="business_name" placeholder="Business name" />
+    <input className="rounded-xl bg-black/40 border border-white/10 px-4 py-3" name="contact_name" placeholder="Person to contact" />
+    <input className="rounded-xl bg-black/40 border border-white/10 px-4 py-3" name="phone" placeholder="Phone number" />
+    <input className="rounded-xl bg-black/40 border border-white/10 px-4 py-3" name="email" placeholder="Email address" />
+  </div>
 
-      <select className="rounded-xl bg-black/40 border border-white/10 px-4 py-3" name="Desired Services">
-        <option>What do you need help with?</option>
-        <option>Network security review</option>
-        <option>Wi-Fi segmentation</option>
-        <option>Windows 10 to Windows 11 upgrade</option>
-        <option>User accounts / admin access cleanup</option>
-        <option>Backup planning</option>
-        <option>Secure remote access</option>
-        <option>General IT support</option>
-        <option>Not sure yet</option>
-      </select>
+  <input
+    className="rounded-xl bg-black/40 border border-white/10 px-4 py-3"
+    name="business_address"
+    placeholder="Business address"
+  />
 
-      <textarea
-        className="min-h-36 rounded-xl bg-black/40 border border-white/10 px-4 py-3"
-        name="Reason for Contact"
-        placeholder="Briefly describe the issue, goal, or desired service."
-      />
+  <select
+    className="rounded-xl bg-black/40 border border-white/10 px-4 py-3"
+    name="desired_service"
+  >
+    <option value="">What do you need help with?</option>
+    <option>Network security review</option>
+    <option>Wi-Fi segmentation</option>
+    <option>Windows 10 to Windows 11 upgrade</option>
+    <option>User accounts / admin access cleanup</option>
+    <option>Backup planning</option>
+    <option>Secure remote access</option>
+    <option>General IT support</option>
+    <option>Not sure yet</option>
+  </select>
 
-      <button
-        type="submit"
-        className="bg-yellow-400 text-black px-8 py-4 rounded-xl font-semibold hover:bg-yellow-300 transition"
-      >
-        Send Request
-      </button>
-    </form>
+  <textarea
+    className="min-h-36 rounded-xl bg-black/40 border border-white/10 px-4 py-3"
+    name="message"
+    placeholder="Briefly describe the issue, goal, or desired service."
+  />
+
+  <button
+    type="submit"
+    className="bg-yellow-400 text-black px-8 py-4 rounded-xl font-semibold hover:bg-yellow-300 transition"
+  >
+    Send Request
+  </button>
+</form>
   </div>
 </section>
 <section
