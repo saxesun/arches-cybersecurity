@@ -1,6 +1,29 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Arches Cybersecurity
+
+Professional cybersecurity and IT services website for small businesses.
+
+## Built With
+- React
+- Vite
+- Tailwind CSS
+- Lucide React Icons
+
+## Features
+- Responsive landing page
+- Service cards
+- Contact form
+- Sticky navigation
+- Modern UI/UX styling
+
+## Purpose
+Created as a modern cybersecurity business website focused on:
+- Small business security
+- Network hardening
+- Windows 11 upgrades
+- Remote access security
+- Backup planning
 
 Currently, two official plugins are available:
 
